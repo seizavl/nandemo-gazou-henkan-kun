@@ -1,0 +1,28 @@
+[project]
+name = "pic-convert"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "NorisueShosei", email = "90289410+injectxr@users.noreply.github.com" }
+]
+dependencies = [
+    "pillow>=11.3.0",
+    "pyinstaller>=6.14.2",
+    "numpy>=2.3.2",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pic_convert"]
