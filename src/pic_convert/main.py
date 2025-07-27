@@ -267,7 +267,7 @@ def show_gui(file_path):
     def select(fmt):
         result = convert_image(file_path, fmt)
         if os.path.exists(result):
-            messagebox.showinfo("✓ Conversion Complete", f"Successfully converted to {fmt.upper()}!\n\nSaved as: {os.path.basename(result)}")
+            pass
         else:
             messagebox.showerror("✗ Conversion Failed", f"Failed to convert image:\n{result}")
         root.destroy()
